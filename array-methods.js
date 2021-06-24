@@ -14,8 +14,8 @@ console.log(cookieIngredients);
 // ---- Verwachte uitkomst: [ 'Hawai', 'Margherita', 'Salami' ]
 
 const pizzas = ["Hawai", "Margherita"];
-
-
+pizzas.push('Salami')
+console.log(pizzas)
 
 /* Opdracht 2: */
 // Verwijder het éérste item van onderstaande array en log dit in de terminal
@@ -23,6 +23,9 @@ const pizzas = ["Hawai", "Margherita"];
 // ---- Verwachte uitkomst: 'Noten' en [ 'Eieren', 'Bloem', 'Cacao', 'Chocoladestukjes', 'Bakpoeder' ]
 
 const brownieIngredients = ["Noten", "Eieren", "Bloem", "Cacao", "Chocoladestukjes", "Bakpoeder"];
+const firstItem = brownieIngredients.shift()
+console.log(firstItem)
+console.log(brownieIngredients)
 
 
 /* Opdracht 3: */
@@ -30,7 +33,8 @@ const brownieIngredients = ["Noten", "Eieren", "Bloem", "Cacao", "Chocoladestukj
 // ---- Verwachte uitkomst: [ 'Piet', 'Jan', 'Henk' ]
 
 const names = ["Henk", "Jan", "Piet"];
-
+names.reverse()
+console.log(names)
 
 
 /* Opdracht 4: */
@@ -38,6 +42,7 @@ const names = ["Henk", "Jan", "Piet"];
 // ---- Verwachte uitkomst: [ 'Utrecht', 'Amsterdam', 'Maastricht', 'Eindhoven' ]
 
 const cities = ["Utrecht", "Maastricht", "Eindhoven"];
-
+cities.splice(1, 0, 'Amsterdam')
+console.log(cities)
 
 

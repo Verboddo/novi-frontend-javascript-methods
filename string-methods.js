@@ -13,7 +13,11 @@ console.log(word.length);
 const fruit = "Banaan";
 const vegetable = "Aardappel";
 
-
+if(fruit.length > vegetable.length) {
+    console.log(true)
+} else {
+    console.log(false)
+}
 
 /* Opdracht 2 */
 //  Zorg ervoor dat de laatste letter van het woord in fruit en vegetable (hierboven) in de terminal gelogd wordt.
@@ -21,28 +25,34 @@ const vegetable = "Aardappel";
 // ---- Verwachte uitkomst voor fruit: "n"
 // ---- Verwachte uitkomst voor vegetable: "l"
 
-
+const lastLetterFruit = fruit.substring(fruit.length -1)
+console.log(lastLetterFruit)
+const lastLetterVegetable = vegetable.substring((vegetable.length - 1))
+console.log(lastLetterVegetable)
 
 /* Opdracht 3 */
 //  Haal de spaties aan het begin en eind van onderstaande zin weg en log dit in de terminal
 // ---- Verwachte uitkomst: "De kat krabt de krullen van de trap"
 
 const userInput = "  De kat krabt de krullen van de trap ";
-
-
+const deleteSpaces = userInput.trim()
+console.log(deleteSpaces)
 
 /* Opdracht 4 */
 // Check of het woord "Fantastisch" in onderstaande zin voorkomt en log dit in de terminal.
 // ---- Verwachte uitkomst: true
 
 const story = "We vinden de behaalde resultaten werkelijk prachtig. Fantastisch, nietwaar?"
-
+if(story.includes("Fantastisch")) {
+    console.log(true)
+}
 
 
 /* Opdracht 5 */
 // Knip de vraag van bovenstaande tekst (story) af, zodat alleen het eerste gedeelte overblijft en log dit in de terminal.
 // ---- Verwachte uitkomst: "We vinden de behaalde resultaten werkelijk prachtig."
-
+const splitStory = story.split(".")
+console.log(splitStory.slice(0, 1))
 
 
 /* Opdracht 6 */
@@ -53,6 +63,9 @@ const story = "We vinden de behaalde resultaten werkelijk prachtig. Fantastisch,
 // ---- Verwachte uitkomst: "€35,59"
 
 const price = "$35.59";
+
+const euroPrice = price.replace("$", '€').replace("." , ",")
+console.log(euroPrice)
 
 
 
